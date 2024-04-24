@@ -1,0 +1,696 @@
+html{
+  width: 100%;
+}
+
+body{
+  width: 100%;
+  height: fit-content;
+    scroll-behavior: smooth;
+    transition: 2s ease-in;
+    overflow-x: hidden;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* This is My Preloader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/* This is An End */
+
+nav{
+  text-decoration: none;
+  font-style: none;
+  width:100% !important;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  height: 65px;
+  border-bottom: 2px solid #f6f4f8;
+}
+
+nav img{
+  width:15%;
+  height: 63px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li{
+  height: 65px;
+  list-style: none;
+  display: inline-block;
+  font-size: large;
+  margin-left: 1.7rem;
+  font-weight: 500;
+}
+
+
+nav ul li a{
+  height: 100%;
+  padding: 2px;
+  padding-bottom: 17px !important;
+  color: grey;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  height: cover !important;
+  line-height: 60px !important;
+  cursor: pointer;
+  transition: 0.2ms;
+}
+
+nav ul li i{
+  color: grey;
+}
+
+nav ul li a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+.active{
+  color: black;
+}
+
+#signin{
+  cursor: pointer;
+  margin-left: 30rem;
+  border-bottom: 3px solid rgb(255, 138, 96);
+
+}
+
+#signin:hover{
+  color: black;
+  border-bottom:  3px solid rgb(255, 138, 96);
+}
+
+
+/* This is My Scroll To Top Button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0a5eb1; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 20px; /* Some padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 2px solid #0a5eb1;
+
+  }
+  
+  #myBtn:hover {
+    background-color: #ffffff;
+    color: #0a5eb1; /* Add a dark-grey background on hover */
+    border: 2px solid #0a5eb1;
+  }
+/* This is An End */
+
+/* This is My Contact Details */
+
+
+
+.contact p{
+  color: darkslategrey;
+  font-size: 20px;
+  height: fit-content;
+  margin-right: 4.3rem;
+}
+
+
+.contact i{
+  background: steelblue;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+}
+
+.contact .fa-xmark{
+  margin-right: 0px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: rgb(152, 41, 226);
+  font-size: 22px;
+  margin-top: -2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* This is My Slide Show */
+
+.main{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5%;
+    height: 100vh;
+
+}
+.slide1{
+  width: 60%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px 20px;
+  top: 5rem;
+  margin-left: 3.45rem;
+  position: absolute;
+}
+
+.slide1 h1{
+  color: #008839;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+
+.slide1 p{
+  color: #262626;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.slide2{
+  width: 60%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px 20px;
+  top: 5rem;
+  margin: auto;
+  margin-left: 10rem;
+  position: absolute;
+}
+
+
+.slide2 h1{
+  color: #882000;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+
+.slide2 p{
+  color: #262626;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.slide3{
+  width: 60%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px 20px;
+  top: 5rem;
+  margin-left: 3.45rem;
+  position: absolute;
+}
+
+
+.slide3 h1{
+  color: #004b88;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+
+.slide3 p{
+  color: #262626;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+  /* This are My Functioning of Carz King Cards */
+
+  .why{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  .why .why_left{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .why_left img{
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .why .why_right{
+    float: right;
+    margin-right: 1rem;
+    margin-top: -60.5rem;
+    padding: 10px 20px;
+    position: relative;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    width: 55%;
+    height: 95vh;
+  }
+
+  .why_right .what{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .what h3{
+    width: 100%;
+    margin-bottom: 4rem;
+    border-bottom: 1.7px solid lightgrey;
+  }
+
+  .what .what-inner{
+    width: 45%;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .what-inner i{
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* This is An End */
+
+  /* This is my Gallery */
+
+  .gallery{
+    background: #ffffff;
+    height: fit-content;
+    padding: 25px 0px;
+  }
+
+  .gal{
+    border-radius: 8px;
+    background: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: row;
+    height: 103vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20%;
+  }
+
+  .gallery .gal_head{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-top: 5rem;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .gal_head h1{
+    width: fit-content;
+    margin: 1.5% auto;
+    padding-bottom: 5px;
+    font-size: 44px;
+    font-weight: 600;
+  }
+
+  .gal_head p{
+    font-size: 24px;
+    font-family: 'apple' 'sans-serif';
+  }
+
+  .gal_head fieldset{
+    color: slategray;
+    margin-bottom: 4rem;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .gal_head fieldset span{
+    font-weight: 600;
+  }
+
+  .gallery a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 250px;
+    height: 130px;
+   padding: 5px;
+    border: 1px solid #fffefe;
+    border-radius: 3px;
+    margin: 16px 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    position: relative;
+  }
+
+  .gallery a:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+
+  .gallery a img{
+    text-align: center;
+    justify-self: center;
+    line-height: 190px;
+   width: fit-content;
+   height: 100px;
+  }
+
+
+  /* This is My Repair Workshop */
+.repair{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.repair h1{
+  font-size: 25px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+.repair p{
+  font-size: 16px;
+  color: steelblue;
+}
+
+.repair .repair_inner{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.r_in{
+  width: 45%;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 5px 10px;
+  margin: 12px;
+  background: white;
+}
+
+.r_in:hover{
+  transition: 0.5s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+  /* This is Just An End */
+
+  /* This are My Testimonials : */
+
+
+
+  /* This is An End */
+
+
+/* This is My Footer */
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(255, 254, 254);
+  height: fit-content;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+/* This is My First Footer Section */
+
+footer .footer1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 33%;
+  margin-right: 1.2rem;
+}
+
+footer .footer1 h1{
+  color: #292929;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+footer .footer1 p{
+  color: #717171;
+  font-size: 18px;
+  
+}
+
+.footer1 .social{
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+}.footer1 .social i{
+  border-radius: 50%;
+  color: darkslategray;
+  font-size: 23px;
+  margin-right: 1rem;
+  line-height: 32px !important;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.footer1 .social i:hover{
+    transition: 0.5s ease-in;
+    background: darkslategrey;
+    color: white;
+}
+
+.fa-facebook-f{
+  border: 1.5px solid lightgrey;
+  color: darkslategray;
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.fa-instagram{
+  border: 1.5px solid lightgrey;
+  color: darkslategray;
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.fa-twitter{
+  border: 1.5px solid lightgrey;
+  color: darkslategray;
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.fa-linkedin-in{
+  border: 1.5px solid lightgrey;
+  color: darkslategray;
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+
+.footer2{
+  width: fit-content;
+  padding:5px;
+  width: 33%;
+  margin-right: 1.2rem;
+}
+
+.footer2 .f-inner{
+  padding: 5px 10px;
+  margin-bottom: 0.2rem;
+}
+
+.footer2 .f-inner i{
+  border: 1.5px solid lightgrey;
+  color: darkslategray;
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.footer2 .f-inner p{
+  color: darkslategray;
+  font-size: 17px;
+}
+
+
+.footer3{
+  width: fit-content;
+  padding: 3px 10px;
+  width: 30%;
+  text-align: center;
+}
+.footer3 form{
+  background: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.footer3{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer3 h3{
+  font-size: 22px;
+}
+
+.footer3 .f3{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer3 .f3 a{
+  margin-top: 1.2rem;
+  font-size: 16px;
+  color: grey;
+  outline: none;
+  font-weight: 500;
+}
+
+.f3 i{
+  margin-right: 1.2rem;
+}
+
+footer .f-bottom{
+  margin-top: 3%;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  border-top: 1.7px solid lightgrey;
+  padding: 10px 20px;
+  font-size: 19px;
+}
+
+/* This is My Line */
+
+.line{
+  width: 92%;
+  margin-bottom: 1.5rem;
+  height: 1.7px;
+  background: #f5f1f1;
+}
+
+.line .line-inner{
+  width: 30%;
+  height: 2px;
+  background: rgb(0, 132, 255);
+}
+
+/* This is An End */
+
+/* These Are My Media Queries */
+
+@media screen and (max-width: 760px){
+
+  .why{
+    display: flex;
+    flex-direction: column;
+  }
+ .why .why_right{
+   float: center;
+width: 90%;
+margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 1075px){
+  #signin{
+      margin-left: 5rem;
+  }
+}

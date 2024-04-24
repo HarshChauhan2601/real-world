@@ -1,0 +1,733 @@
+ 
+nav{
+    text-decoration: none;
+    font-style: none;
+    width:100% !important;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 90px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  nav img{
+    width: 20%;
+    height: 64px;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  nav ul li{
+    height: 65px;
+    list-style: none;
+    display: inline-block;
+    font-size: large;
+    margin-left: 1.7rem;
+    font-weight: 500;
+  }
+  
+  
+  nav ul li a{
+    height: 100%;
+    padding: 2px;
+    padding-bottom: 17px !important;
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    height: cover !important;
+    line-height: 90px !important;
+    cursor: pointer;
+    transition: 0.2ms;
+  }
+  
+  nav ul li i{
+    color: grey;
+  }
+  
+  nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  .active{
+    color: black;
+  }
+  
+  #signin{
+    cursor: pointer;
+    margin-left: 30rem;
+    border-bottom: 3px solid rgb(255, 138, 96);
+  
+  }
+  
+  #signin:hover{
+    color: black;
+    border-bottom:  3px solid rgb(255, 138, 96);
+  }
+  
+  
+  /* This is My Scroll To Top Button */
+  #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: #0a5eb1; /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 20px; /* Some padding */
+      border-radius: 8px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+      border: 2px solid #0a5eb1;
+  
+    }
+    
+    #myBtn:hover {
+      background-color: #ffffff;
+      color: #0a5eb1; /* Add a dark-grey background on hover */
+      border: 2px solid #0a5eb1;
+    }
+    
+  
+  .toggle{
+      height: 80%;
+      display: none;
+      margin: auto;
+      margin-right: 20px;
+      float: right;
+      border-radius: 4px;
+      background: #f5f5f5;
+  padding: 5px 15px;
+  }
+  
+  .toggle i{
+      line-height: 45px;
+      color: grey;
+      font-size: 30px;
+      cursor: pointer;
+  }
+
+.path{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 4rem;
+    border-bottom: 1.7px solid lightgrey;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+.path p{
+    line-height: 4rem;
+    color: darkslategrey;
+}
+
+.path span{
+    line-height: 4rem;
+    color: lightslategrey;
+}
+
+.path i{
+    line-height: 4rem;
+    margin: 0px 10px;
+}
+
+.fa-house-chimney{
+    color: slateblue;
+}
+
+
+/* This is My Wash Cars Section */
+.wash{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.wash_left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+}
+
+.wash_left h1{
+    color: black;
+    font-size: 40px;
+    margin: 3% 30px;
+}
+
+.wash_left fieldset{
+    color: tomato;
+    margin-left: 30px;
+    margin-bottom: 3rem;
+    font-size: 20px;
+}
+
+.wash_left span{
+    font-size: 19px;
+    margin: 0.4rem 30px;
+    color: slategray;
+}
+
+.wash_left b{
+    color: tomato;
+}
+
+.wash_left button{
+    margin: 5rem;
+    background: tomato;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.wash_right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+}
+
+.wash_right h2{
+    width: 100%;
+    color: seagreen;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 2% auto;
+}
+
+.wash_box{
+    margin: 3%;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.wash_box:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.wash_box img{
+    width: 100%;
+    height: 70%;
+}
+
+.wash_box strong{
+    margin-top: 1.5rem;
+    font-size: 22px;
+}
+.wash_box samp{
+    color: slategrey;
+}
+/* This is An End */
+
+#w1{
+    display: none;
+    margin-top: 3rem;
+    border-top: 1.7px solid lightgrey;
+    padding-top: 20px;
+}
+
+
+#w2{
+    display: none;
+    margin-top: 3rem;
+    border-top: 1.7px solid lightgrey;
+    padding-top: 20px;
+}
+
+/* This is My Ceramic Coating Paragraph */
+
+.ceramic{
+    border-top: 1.7px solid lightgrey;
+    margin: 5% auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.ceramic .ceramic_left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.ceramic_left h1{
+ width: 97%; margin: 5% auto; font-size: 34px; padding: 10px 20px; 
+border: 1.7px dashed slategray; border-radius: 5px;
+}
+
+.ceramic_left span{
+    color: slategray;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.ceramic_left p{
+    color: darkslategray;
+    font-size: 22px;
+}
+
+
+.ceramic_right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.ceramic_right img{
+
+    width: 250px;
+    height: 230px;
+    margin-top: 7rem;
+    margin-right: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+}
+/* This is An End */
+
+/* This is For My Workshop */
+.work{
+    width: 100%;
+    height: fit-content;
+}
+
+.work_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.work_inner .work_box{
+    width: 42%;
+    height: 330px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    margin: 3%;
+    padding: 5px 15px;
+}
+
+.work_box img{
+    width: 90%;
+    margin: auto;
+    height: 60%;
+}
+
+.work_box h1{
+    color: steelblue;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.work_box p{
+    color: dimgray;
+    font-size: 19px;
+}
+/* This is An End */
+
+/* This is My Overall Section */
+.overall{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.over_left{
+    width: 40%;
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+}
+
+.over_left h4{
+    color: orangered;
+    font-size: 40px;
+    margin-bottom: 3rem;
+}
+
+.over_left span{
+    margin: 7px 10px;
+    font-size: 18px;
+}
+
+.over_right{
+    margin-top: 20rem;
+    width: 40%;
+    margin-left: 7rem;
+    height: 300px;
+}
+
+.over_right img{
+    width: 90%;
+    height: 100%;
+}
+/* This is An End */
+
+/* This is My Insurance & Loan Section */
+.insure{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.insure .insure_left{
+    width: 45%;
+}
+
+.insure .insure_right{
+    width: 45%;
+}
+/* This is An End */
+
+/* This is My cashless section */
+.cash{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+}
+
+.cash .cash_box{
+  width: 150px;
+  height: 200px;
+}
+
+.cash .cash_box img{
+  width: 100%;
+  height: 100%;
+}
+/* This is An End */
+
+/* This is My Footer */
+
+/* This is My Footer */
+footer{
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(255, 254, 254);
+    height: fit-content;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  /* This is My First Footer Section */
+  
+  footer .footer1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 33%;
+    margin-right: 1.2rem;
+  }
+  
+  footer .footer1 h1{
+    color: #292929;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  footer .footer1 p{
+    color: #717171;
+    font-size: 18px;
+    
+  }
+  
+  .footer1 .social{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+  }
+  .footer1 .social i{
+    border-radius: 50%;
+    color: darkslategray;
+    font-size: 23px;
+    margin-right: 1rem;
+    line-height: 32px !important;
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+
+  .footer1 .social i:hover{
+      transition: 0.5s ease-in;
+      background: darkslategrey;
+      color: white;
+  }
+  
+  .fa-facebook-f{
+    border: 1.5px solid lightgrey;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .fa-instagram{
+    border: 1.5px solid lightgrey;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .fa-twitter{
+    border: 1.5px solid lightgrey;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .fa-linkedin-in{
+    border: 1.5px solid lightgrey;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .footer2{
+    width: fit-content;
+    padding:5px;
+    width: 33%;
+    margin-right: 1.2rem;
+  }
+  
+  .footer2 .f-inner{
+    padding: 5px 10px;
+    margin-bottom: 0.2rem;
+  }
+  
+  .footer2 .f-inner i{
+    border: 1.5px solid lightgrey;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .footer2 .f-inner p{
+    color: darkslategray;
+    font-size: 17px;
+  }
+  
+  
+  .footer3{
+    width: fit-content;
+    padding: 3px 10px;
+    width: 30%;
+    text-align: center;
+  }
+  .footer3 form{
+    background: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .footer3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .footer3 h3{
+    font-size: 22px;
+  }
+  
+  .footer3 .f3{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .footer3 .f3 a{
+    margin-top: 1.2rem;
+    font-size: 16px;
+    color: grey;
+    outline: none;
+    font-weight: 500;
+  }
+  
+  .f3 i{
+    margin-right: 1.2rem;
+  }
+  
+  footer .f-bottom{
+    margin-top: 3%;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    border-top: 1.7px solid lightgrey;
+    padding: 10px 20px;
+    font-size: 19px;
+  }
+  
+/* This is An End */
+
+
+
+
+  /* These Are My Media Queries */
+  @media screen and (max-width: 760px){
+    nav img{
+        width:30%;
+        height: 64px;
+    }
+
+    /* This is My Footer */
+  
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+   footer .footer1{
+      width: 100%;
+    }
+  
+    .footer1 p{
+      width: 100%;
+    }
+  
+    .footer2{
+      width: 100%;
+    }
+  
+    .footer3{
+      width: 100%;
+    }
+
+
+  }
+  
+  @media screen and (max-width: 425px){
+ 
+  
+  }
+  
+ 
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1024px){
+    main{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+  
+    .fa-bars{
+        display: block;
+    }
+  
+    .toggle{
+     right: 0rem;
+     position: relative;
+     display: block;
+    }
+  
+  
+    nav ul{
+        display: flex;
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        margin-left: -100%;
+        float: left;
+        justify-self: left;
+        border-right: 2px solid #f6f4f8;
+        background-color: rgb(254, 255, 254);
+        flex-direction: column;
+    }
+  
+    nav ul li{
+        margin-top: 1rem;
+        border-left: 2px solid #f6f4f8;
+        padding: 10px 15px;
+        border-bottom: none;
+    }
+  
+    nav ul li:hover{
+        color: #262626;
+    }
+  
+    nav ul li a:hover{
+        border-bottom: none;
+    }
+  
+    .active{
+        border-bottom: none; 
+    }
+  
+    #active{
+        border-bottom: none;
+        color: black;
+  
+    }
+  
+    #signin{
+        margin-left: 0rem;
+    }
+  
+    #signin:hover{
+        border-left: none;
+    }
+  
+  }
+  
+  

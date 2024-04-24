@@ -1,0 +1,290 @@
+
+ 
+nav{
+    text-decoration: none;
+    font-style: none;
+    width:100% !important;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 65px;
+    border-bottom: 2px solid #f6f4f8;
+  }
+  
+  nav img{
+    width: 10%;
+    height: 64px;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul li{
+    height: 65px;
+    list-style: none;
+    display: inline-block;
+    font-size: large;
+    margin-left: 1.7rem;
+    font-weight: 500;
+  }
+  
+  
+  nav ul li a{
+    height: 100%;
+    padding: 2px;
+    padding-bottom: 17px !important;
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    height: cover !important;
+    line-height: 60px !important;
+    cursor: pointer;
+    transition: 0.2ms;
+  }
+  
+  nav ul li i{
+    color: grey;
+  }
+  
+  nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  .active{
+    color: black;
+  }
+  
+  #signin{
+    cursor: pointer;
+    margin-left: 30rem;
+    border-bottom: 3px solid rgb(255, 138, 96);
+  
+  }
+  
+  #signin:hover{
+    color: black;
+    border-bottom:  3px solid rgb(255, 138, 96);
+  }
+  
+  
+  /* This is My Scroll To Top Button */
+  #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: #0a5eb1; /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 20px; /* Some padding */
+      border-radius: 8px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+      border: 2px solid #0a5eb1;
+  
+    }
+    
+    #myBtn:hover {
+      background-color: #ffffff;
+      color: #0a5eb1; /* Add a dark-grey background on hover */
+      border: 2px solid #0a5eb1;
+    }
+    
+  
+  .toggle{
+      height: 80%;
+      display: none;
+      margin: auto;
+      margin-right: 20px;
+      float: right;
+      border-radius: 4px;
+      background: #f5f5f5;
+  padding: 5px 15px;
+  }
+  
+  .toggle i{
+      line-height: 45px;
+      color: grey;
+      font-size: 30px;
+      cursor: pointer;
+  }
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.main h1{
+    width: 100%;
+    margin-top: 10rem;
+}
+.main p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:gray;
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.main button{
+    margin-top: 10rem;
+    width: fit-content;
+    padding: 10px 20px;
+    height: fit-content;
+    color: steelblue;
+    font-size: 19px;
+    background: #dbe6e4;
+}
+
+main form{
+    width: 60%;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+}
+
+
+main form h1{
+    color: steelblue;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+input{
+    width: 100%;
+    height: 4.5rem;
+    border: 1.7px solid lightgrey;
+    color: #262626;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus{
+    border: 2.5px solid steelblue;
+}
+
+textarea:focus{
+    border: 2.5px solid steelblue;
+ 
+}
+
+label {
+    color: darkslategrey;
+    margin-top: 3rem;
+}
+
+textarea{
+    width: 100%;
+    height: fit-content;
+    border: 1.7px solid lightgrey;
+    color: #262626;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button[type="submit"]{
+    width: 40%;
+    height: 4.5rem;
+    margin-top: 5%;
+    border-radius: 4px;
+    border: 2px solid #0077d9;
+    background: #0077d9;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background: #004382;
+    border: 2px solid #004382;
+    color: white;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+  
+    .fa-bars{
+        display: block;
+    }
+  
+    .toggle{
+     right: 0rem;
+     position: relative;
+     display: block;
+    }
+  
+    nav{
+      padding: 0rem;
+    }
+  
+    nav ul{
+        display: flex;
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        margin-left: -200%;
+        float: left;
+        justify-self: left;
+        border-right: 2px solid #f6f4f8;
+        background-color: rgb(254, 255, 254);
+        flex-direction: column;
+    }
+  
+    nav ul li{
+        margin-top: 1rem;
+        border-left: 2px solid #f6f4f8;
+        padding: 10px 15px;
+        border-bottom: none;
+    }
+  
+    nav ul li:hover{
+        color: #262626;
+    }
+  
+    nav ul li a:hover{
+        border-bottom: none;
+    }
+  
+    .active{
+        border-bottom: none; 
+    }
+  
+    #active{
+        border-bottom: none;
+        color: black;
+  
+    }
+  
+    #signin{
+        margin-left: 0rem;
+    }
+  
+    #signin:hover{
+        border-left: none;
+    }
+  
+  }

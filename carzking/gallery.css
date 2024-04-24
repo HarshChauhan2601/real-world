@@ -1,0 +1,293 @@
+
+nav{
+    text-decoration: none;
+    font-style: none;
+    width:100% !important;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 65px;
+    border-bottom: 2px solid #f6f4f8;
+  }
+  
+  nav img{
+    width:10%;
+    height: 63px;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav ul li{
+    height: 65px;
+    list-style: none;
+    display: inline-block;
+    font-size: large;
+    margin-left: 1.7rem;
+    font-weight: 500;
+  }
+  
+  
+  nav ul li a{
+    height: 100%;
+    padding: 2px;
+    padding-bottom: 17px !important;
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    height: cover !important;
+    line-height: 60px !important;
+    cursor: pointer;
+    transition: 0.2ms;
+  }
+  
+  nav ul li i{
+    color: grey;
+  }
+  
+  nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  .active{
+    color: black;
+  }
+  
+  #signin{
+    cursor: pointer;
+    margin-left: 30rem;
+    border-bottom: 3px solid rgb(255, 138, 96);
+  
+  }
+  
+  #signin:hover{
+    color: black;
+    border-bottom:  3px solid rgb(255, 138, 96);
+  }
+  
+  
+  /* This is My Scroll To Top Button */
+  #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: #0a5eb1; /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 20px; /* Some padding */
+      border-radius: 8px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+      border: 2px solid #0a5eb1;
+  
+    }
+    
+    #myBtn:hover {
+      background-color: #ffffff;
+      color: #0a5eb1; /* Add a dark-grey background on hover */
+      border: 2px solid #0a5eb1;
+    }
+    
+  
+  .toggle{
+      height: 80%;
+      display: none;
+      margin: auto;
+      margin-right: 20px;
+      float: right;
+      border-radius: 4px;
+      background: #f5f5f5;
+  padding: 5px 15px;
+  }
+  
+  .toggle i{
+      line-height: 45px;
+      color: grey;
+      font-size: 30px;
+      cursor: pointer;
+  }
+  
+  
+  main{
+    width: 100%;
+    height: 100%;
+    }
+    
+    .search{
+        width: 200px;
+        margin: auto;
+        border: 1.7px solid lightgrey;
+        padding: 5px 10px;
+        border-radius: 4px;
+        background: white;
+        height: 4.5rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    
+    .search input{
+    border: none;
+    outline: none;
+    margin-right: 2rem;
+    width: 80%;
+    }
+    
+    .search button{
+        background: #00aaf9;
+        color: white;
+        padding: 5px 10px;
+    }
+    
+    .cars{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: fit-content;
+        justify-content: center;
+    }
+    
+    
+    .cars .cars-inner{
+        margin: auto;   
+        width: 50%;
+        height: fit-content;
+        background: white;
+        padding: 10px 20px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    
+    .line-under{
+        height: 2px;
+        background: #006dac;
+        width: 25%;
+        margin-bottom: 1.23rem;
+    }
+    
+    .cars-img img{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 350px;
+        height: 90%;
+    }
+    
+    
+    .cars-inner .cars-det h1{
+        font-size: 23px;
+    }
+    
+    .cars-inner .cars-det fieldset{
+        font-size: 16px;
+        color: slategray;
+        font-weight: 500;
+    }
+    
+    .cars-inner .cars-det .cars_details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+    .cars-inner .cars-det .cars_details span{
+        font-size: 16px;
+        color: darkslategray;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .btn{
+        width: 100%;
+        text-align: right;
+    }
+    
+    .btn button{
+        width: fit-content;
+        height: fit-content;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 20px;
+        font-size: 17px;
+        outline: none;
+        background: #5086fc;
+        cursor: pointer;
+    }
+    
+    .btn button:hover{
+        transition: 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        background: #292929;
+    }
+
+
+    @media screen and (max-width: 1024px){
+        main{
+            height: fit-content;
+            padding-bottom: 20px;
+        }
+      
+        .fa-bars{
+            display: block;
+        }
+      
+        .toggle{
+         right: 0rem;
+         position: relative;
+         display: block;
+        }
+      
+      
+        nav ul{
+            display: flex;
+            height: 100vh;
+            position: absolute;
+            width: 100%;
+            margin-left: -100%;
+            float: left;
+            justify-self: left;
+            border-right: 2px solid #f6f4f8;
+            background-color: rgb(254, 255, 254);
+            flex-direction: column;
+        }
+      
+        nav ul li{
+            margin-top: 1rem;
+            border-left: 2px solid #f6f4f8;
+            padding: 10px 15px;
+            border-bottom: none;
+        }
+      
+        nav ul li:hover{
+            color: #262626;
+        }
+      
+        nav ul li a:hover{
+            border-bottom: none;
+        }
+      
+        .active{
+            border-bottom: none; 
+        }
+      
+        #active{
+            border-bottom: none;
+            color: black;
+      
+        }
+      
+        #signin{
+            margin-left: 0rem;
+        }
+      
+        #signin:hover{
+            border-left: none;
+        }
+      
+      }
